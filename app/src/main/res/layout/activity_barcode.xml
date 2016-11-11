@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:screenOrientation="portrait"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.agt.andytertzakian.quecard.BarcodeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tableRow"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4.8"
+            android:orientation="vertical"
+            android:background="@color/accent_material_dark"
+            android:elevation="2dp"
+            android:fadeScrollbars="false"
+            android:duplicateParentState="true">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView3"
+                android:src="@drawable/quecardlogo2_large"
+                android:layout_gravity="right"
+                android:background="@color/accent_material_dark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4.15"
+            android:gravity="center"
+            android:baselineAligned="false">
+
+            <TextView
+                android:id="@+id/LabelWelcome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="26sp"
+                android:fontFamily="sans-serif-light"
+                android:layout_weight="1"
+                android:layout_gravity="bottom|center_horizontal"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.15"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/QRCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00ffffff"
+                android:scaleX="1.3"
+                android:scaleY="1.3"
+                android:layout_gravity="center_horizontal|top"
+                android:scaleType="fitCenter"
+                android:contentDescription="BarCode"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:elevation="2dp">
+
+                <TextView
+                    android:id="@+id/BarcodeContent"
+                    android:layout_height="0dp"
+                    android:layout_width="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_weight="1"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:gravity="bottom" />
+
+                <ImageView
+                    android:id="@+id/BCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="bottom"
+                    android:scaleType="fitXY"
+                    android:scaleX="1.1" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/accent_material_dark"
+            android:layout_weight="4.6"
+            android:elevation="5dp"
+            android:fadeScrollbars="false">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/imageButton"
+                android:src="@drawable/abc_btn_radio_material"
+                android:background="#00ffffff"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/imageButton2"
+                android:src="@drawable/abc_btn_radio_material"
+                android:background="#00ffffff"
+                android:layout_alignTop="@+id/imageButton"
+                android:layout_toRightOf="@+id/imageButton"
+                android:layout_toEndOf="@+id/imageButton"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/imageButton3"
+                android:src="@drawable/abc_btn_radio_to_on_mtrl_015"
+                android:background="#00ffffff"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:clickable="true"/>
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/imageButton4"
+                android:src="@drawable/abc_btn_radio_material"
+                android:background="#00ffffff"
+                android:layout_alignTop="@+id/imageButton2"
+                android:layout_toRightOf="@+id/imageButton3"
+                android:layout_toEndOf="@+id/imageButton3"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/Settings"
+                android:src="@drawable/abc_btn_radio_material"
+                android:background="#00ffffff"
+                android:layout_alignTop="@+id/imageButton4"
+                android:layout_toRightOf="@+id/imageButton4"
+                android:layout_toEndOf="@+id/imageButton4"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

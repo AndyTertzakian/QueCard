@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "87755244668",
+    "firebase_url": "https://que-card.firebaseio.com",
+    "project_id": "que-card",
+    "storage_bucket": "que-card.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87755244668:android:a39e39f0051ba117",
+        "android_client_info": {
+          "package_name": "com.agt.andytertzakian.quecard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87755244668-g9m2qhc1bp9ul4dphhd8gjfsutfchqhv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqjvdVUDmMGe5fhstKsqi8VYxQ2qUpTcQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
