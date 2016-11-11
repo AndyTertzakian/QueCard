@@ -71,6 +71,7 @@ public class SignInActivity extends AppCompatActivity implements
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
                     // User is signed in
+                    updloadUser();
                     Log.d(TAG, "onAuthStateChanged_SignIn:signed_in:" + user.getUid());
                 } else {
                     // User is signed out
@@ -125,6 +126,10 @@ public class SignInActivity extends AppCompatActivity implements
         }
     }
 
+    protected void updloadUser(){
+        User user = new User();
+        user.upload();
+    }
 
     public void onActivityResult(int requestCode, int resultCode, Intent data){
         super.onActivityResult(requestCode, resultCode, data);

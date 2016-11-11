@@ -76,7 +76,16 @@ public class BarcodeActivity extends AppCompatActivity implements GoogleApiClien
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
                     mFirebaseUser = user;
+                    updloadUser();
                     initUI();
+
+                    //FOR GENERATING RANDOM USERS
+                    try {
+                        RandomDataGenerator.generateRandomUsers();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
                     Log.d(TAG, "onAuthStateChanged_Barcode:signed_in:" + mFirebaseUser.getUid());
                 } else {
                     // User is signed out
@@ -113,6 +122,11 @@ public class BarcodeActivity extends AppCompatActivity implements GoogleApiClien
                         BarcodeActivity.this.finish();
                     }
                 });
+    }
+
+    protected void updloadUser(){
+        User user = new User();
+        user.upload();
     }
 
     private void revokeAccess() {
