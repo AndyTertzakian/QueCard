@@ -31,7 +31,6 @@ public class User {
             String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
             setName(FirebaseAuth.getInstance().getCurrentUser().getDisplayName());
             setEmail(FirebaseAuth.getInstance().getCurrentUser().getEmail());
-
             users.child(uid).setValue(this);
         }
     }

@@ -80,11 +80,11 @@ public class BarcodeActivity extends AppCompatActivity implements GoogleApiClien
                     initUI();
 
                     //FOR GENERATING RANDOM USERS
-                    try {
-                        RandomDataGenerator.generateRandomUsers();
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
+//                    try {
+//                        RandomDataGenerator.generateRandomUsers();
+//                    } catch (InterruptedException e) {
+//                        e.printStackTrace();
+//                    }
 
                     Log.d(TAG, "onAuthStateChanged_Barcode:signed_in:" + mFirebaseUser.getUid());
                 } else {

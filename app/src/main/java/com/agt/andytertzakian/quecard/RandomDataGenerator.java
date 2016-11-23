@@ -17,7 +17,7 @@ import java.util.UUID;
 public class RandomDataGenerator {
 
     private static SecureRandom sRandom = new SecureRandom();
-    private static int delay = 5*1000; //30 seconds
+    private static int delay = 5*1000; //5 seconds
 
     //private constructor for private class
     private RandomDataGenerator(){
